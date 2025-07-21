@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  php-login:
+    build: .
+    ports:
+      - "8080:80"  # Expose port 8080 on your host machine to port 80 on the container
+    volumes:
+      - .:/var/www/html  # Mount the current directory to /var/www/html in the container
+    networks:
+      - php-net
+
+networks:
+  php-net:
+    driver: bridge
