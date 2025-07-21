@@ -23,7 +23,7 @@ if ($_POST['username'] === 'john' && $_POST['password'] === 'day') {
     <h1>Login Page</h1>
 
     <!-- Login Form -->
-    <form method="POST" action="login.php">
+    <form method="POST">
         <label>Username: <input type="text" name="username" required></label><br><br>
         <label>Password: <input type="password" name="password" required></label><br><br>
         <input type="submit" value="Login">
