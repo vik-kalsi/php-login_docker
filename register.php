@@ -31,8 +31,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 
-<?php 
-    echo $message;
-?>
 
-<p><a href="/">Home</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Registration</title>
+</head>
+
+<body class="grid justify-center bg-emerald-200 font-bold">
+    <?php 
+    echo $message;
+    ?>
+
+    <p class="border-2 mt-8"><a href="/">Home</p>
+</body>
+
+</html>
+
